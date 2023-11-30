@@ -18,7 +18,7 @@ public class ArraySumChecker {
 
 
     public static boolean checkArraySum(int[] array) {
-        // Проверяем, что массив не является null
+
         if (array == null) {
             System.out.println("Массив не инициализирован.");
             return false;
@@ -35,7 +35,7 @@ public class ArraySumChecker {
             }
         }
 
-        // Проверяем, равна ли сумма числу 30
+
         return sum == 30;
     }
 }
