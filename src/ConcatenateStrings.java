@@ -12,7 +12,7 @@ public class ConcatenateStrings {
     }
 
     public static String concatenateWithoutFirstLetters(String str1, String str2) {
-        // Проверяем, что строки не являются null и имеют длину более 1 символа
+
         if (str1 == null || str2 == null || str1.length() < 2 || str2.length() < 2) {
             System.out.println("Некорректные строки.");
             return "";
