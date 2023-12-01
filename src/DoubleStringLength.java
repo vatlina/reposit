@@ -4,7 +4,7 @@
 public class DoubleStringLength {
     public static void main(String[] args) {
 
-        String inputString = "Hello";
+        String inputString = "Hello Java";
         int result = getDoubleStringLength(inputString);
 
         System.out.println("Двойная длина строки: " + result);
