@@ -1,6 +1,6 @@
 public class ATM {
     public static void main(String[] args) {
-        int amount = 106;//сумма
+        int amount = 48;//сумма
         int[] result = withdraw(amount);
         System.out.println("Минимальное количество банкнот для суммы " + amount + ":");
         System.out.println("10 долларов: " + result[0]);
