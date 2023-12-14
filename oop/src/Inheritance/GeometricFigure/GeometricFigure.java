@@ -8,7 +8,7 @@ public class GeometricFigure {
     }
 
     public double calculateArea() {
-        return 0.0; // Реализация общего метода
+        return 0.0;
     }
 
     public void printArea() {
