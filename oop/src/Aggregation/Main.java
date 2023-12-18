@@ -1,4 +1,6 @@
 package Aggregation;
+/*С использованием агрегации (HAS-A relationship) создать классы Кошелек ( Wallet ) и Деньги ( Money).
+        Вывести на печать несколько объектов класса Wallet*/
 public class Main {
     public static void main(String[] args) {
         Money money1 = new Money("USD", 220.0);
