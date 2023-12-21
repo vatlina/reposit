@@ -2,7 +2,7 @@ package enumerations.DayOfWeekChecker1;
 
 import java.util.Scanner;
 import java.util.Scanner;
-
+/*Написать программу, которая при вводе с клавиатуры дня недели отвечает на вопрос является ли этот день выходным. (true/false) Использовать Enum*/
 public class Main {
 
     public enum Day {
