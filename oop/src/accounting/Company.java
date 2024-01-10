@@ -54,7 +54,7 @@ class Company {
 
         Company company = new Company();
 
-        // Добавляем сотрудников
+
         company.addEmployee(new WageEmployee(1, "John", "Doe", 40, 25.0));
         company.addEmployee(new SalesManager(2, "Jane", "Smith", 100000, 0.05));
         company.addEmployee(new WageEmployee(3, "Bob", "Johnson", 30, 20.0));
