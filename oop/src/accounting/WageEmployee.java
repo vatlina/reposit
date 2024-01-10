@@ -1,18 +1,16 @@
 package accounting;
 
 class WageEmployee extends Employee {
-    private int hoursWorked;
-    private double hourlyRate;
-
-    public WageEmployee(int id, String name, String secondName, int hoursWorked, double hourlyRate) {
+    private final double hourlyRate;
+    private final int hoursWorked;
+    public WageEmployee(int id, String name, String secondName, double hourlyRate, int hoursWorked) {
         super(id, name, secondName);
-        this.hoursWorked = hoursWorked;
         this.hourlyRate = hourlyRate;
+        this.hoursWorked = hoursWorked;
     }
-
     @Override
     public double calculateSalary() {
-        double baseSalary = hoursWorked * hourlyRate;
-        return Math.max(baseSalary, Company.MINIMUM_WAGE);
+        double salary = hourlyRate * hoursWorked;
+        return Math.max(salary, Company.MINIMUM_WAGE);
     }
 }
