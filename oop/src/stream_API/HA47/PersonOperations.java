@@ -24,18 +24,18 @@ public class PersonOperations {
         List<String> legalNames = persons.stream()
                 .filter(person -> person.getAge() > 18)
                 .map(Person::getName)
-                .collect(Collectors.toList());
+                .toList();
 
-        StringBuilder result = new StringBuilder("At the moment ");
+        StringBuilder result = new StringBuilder("На данный момент ");
         for (int i = 0; i < legalNames.size(); i++) {
             result.append(legalNames.get(i));
             if (i < legalNames.size() - 2) {
                 result.append(", ");
             } else if (i == legalNames.size() - 2) {
-                result.append(" and ");
+                result.append(" и ");
             }
         }
-        result.append(" are of legal age");
+        result.append(" достигли совершеннолетия");
 
         return result.toString();
     }
@@ -49,7 +49,7 @@ public class PersonOperations {
         );
 
         int totalAgeOver18 = sumAgeOver18(persons);
-        System.out.println("Total age over 18: " + totalAgeOver18);
+        System.out.println("Общий (суммарный) возраст лиц старше 18 лет: " + totalAgeOver18);
 
         String legalNames = namesOver18(persons);
         System.out.println(legalNames);

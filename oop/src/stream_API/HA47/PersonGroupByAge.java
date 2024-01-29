@@ -13,6 +13,7 @@ public class PersonGroupByAge {
     public static Map<Integer, List<Person>> groupByAge(List<Person> persons) {
         return persons.stream()
                 .collect(Collectors.groupingBy(Person::getAge));
+
     }
 
     public static void main(String[] args) {
