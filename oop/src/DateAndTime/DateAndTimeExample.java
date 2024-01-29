@@ -11,7 +11,6 @@ package DateAndTime;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.temporal.ChronoUnit;
 public class DateAndTimeExample {
     public static void main(String[] args) {
         // 1. Текущая дата
@@ -25,7 +24,7 @@ public class DateAndTimeExample {
         System.out.println(STR."Текущий год, месяц и день: \{currentYear}, \{currentMonth}, \{currentDay}");
 
         // 2. День рождения
-        LocalDate birthday = LocalDate.of(1917, 01, 23);
+        LocalDate birthday = LocalDate.of(1917, 1, 23);
         System.out.println(STR."День рождения: \{birthday}");
 
         // 3. Проверка на равенство двух дат
